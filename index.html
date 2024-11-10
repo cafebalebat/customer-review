@@ -3,31 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review Slider</title>
+    <title>Interactive Dark Theme Review Slider</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* Navbar styling */
         .navbar {
-            background-color: #1abc9c;
+            background-color: #1b1b1b;
         }
         .navbar-brand, .nav-link {
-            color: #fff !important;
+            color: #f8f8f8 !important;
+            transition: color 0.3s;
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: #1abc9c !important;
+        }
+
+        /* Body background and review container styling */
+        body {
+            background-color: #121212;
+            color: #ddd;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .review-container {
+            min-height: calc(100vh - 140px); /* Adjust for navbar and footer */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 20px;
         }
 
         /* Review card styling */
         .review-card {
-            background-color: #f8f8f8;
+            background-color: #1e1e1e;
             border-radius: 10px;
             padding: 40px;
             margin: 20px 0;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
             text-align: center;
             max-width: 600px;
+            transition: transform 0.3s;
+        }
+        .review-card:hover {
+            transform: translateY(-5px);
         }
         .review-text {
             font-size: 1.2rem;
             font-style: italic;
-            color: #333;
+            color: #f1f1f1;
         }
         .reviewer-name {
             color: #1abc9c;
@@ -38,6 +63,11 @@
         .stars {
             font-size: 1.5rem;
             color: #ffc107;
+            transition: transform 0.3s, color 0.3s;
+        }
+        .stars:hover {
+            color: #ffdd57;
+            transform: scale(1.1);
         }
 
         /* Carousel controls styling */
@@ -45,25 +75,19 @@
             width: 5%;
         }
         .carousel-control-prev-icon, .carousel-control-next-icon {
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(255, 255, 255, 0.3);
             border-radius: 50%;
             padding: 10px;
             cursor: pointer;
         }
-
-        /* Center the review carousel */
-        .review-container {
-            min-height: calc(100vh - 80px); /* Full viewport height minus navbar and footer */
-            padding-top: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+            background-color: rgba(255, 255, 255, 0.6);
         }
 
         /* Footer styling */
         footer {
-            background-color: #1abc9c;
-            color: #fff;
+            background-color: #1b1b1b;
+            color: #f8f8f8;
             padding: 20px;
             text-align: center;
             position: fixed;
@@ -107,7 +131,7 @@
                 <div class="review-card">
                     <div class="stars">★★★★★</div>
                     <p class="review-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id convallis neque.”</p>
-                    <p class="reviewer-name">GADING KHAIRLAMBANG</p>
+                    <p class="reviewer-name">Siti Nursalamah</p>
                 </div>
             </div>
             <!-- Slide 2 -->
