@@ -1,23 +1,23 @@
 *
 /* Body background and review container styling */
 body {
-    background-color: #121212;
-    color: #ddd;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
+  background-color: #121212;
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-  /* Navbar styling */
-      .navbar {
-        background-color: #1b1b1b;
-      }
-      .navbar-brand,
-      .nav-link {
-        color: #ffffff !important;
-        transition: color 0.3s;
-      }
-      .navbar-brand:hover,
-      .nav-link:hover {
-        color: #f6ff00 !important;
-      }
+/* Navbar styling */
+.navbar {
+  background-color: #1b1b1b;
+}
+.navbar-brand,
+.nav-link {
+  color: #ffffff !important;
+  transition: color 0.3s;
+}
+.navbar-brand:hover,
+.nav-link:hover {
+  color: #f6ff00 !important;
+}
