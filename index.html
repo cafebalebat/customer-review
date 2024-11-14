@@ -23,7 +23,14 @@
         color: #f6ff00 !important;
       }
 
-      
+      /* Body background and review container styling */
+      body {
+        background-color: #121212;
+        color: #ddd;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
 
       .review-container {
         min-height: calc(100vh - 140px); /* Adjust for navbar and footer */
@@ -110,42 +117,37 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="#">Review Customer</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="https://cafebalebat.shop/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://cafebalebat.shop/order/"
-              >Reviews</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://cafebalebat.shop/maps/"
-              >Contact</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://cafebalebat.shop/payment/"
-              >Payment</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="#">Review Customer</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="https://cafebalebat.shop/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://cafebalebat.shop/order/">Reviews</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://cafebalebat.shop/maps/">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://cafebalebat.shop/payment/">Payment</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
 
     <!-- Review Slider centered -->
     <div class="review-container">
