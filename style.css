@@ -39,11 +39,13 @@ body {
 .review-card:hover {
   transform: translateY(-5px);
 }
+
 .review-text {
   font-size: 1.2rem;
   font-style: italic;
   color: #ffffff;
 }
+
 .reviewer-name {
   color: #f6ff00 !important;
   font-weight: bold;
