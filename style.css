@@ -7,3 +7,17 @@ body {
     flex-direction: column;
     min-height: 100vh;
   }
+
+  /* Navbar styling */
+  .navbar {
+    background-color: #1b1b1b;
+  }
+  .navbar-brand,
+  .nav-link {
+    color: #ffffff !important;
+    transition: color 0.3s;
+  }
+  .navbar-brand:hover,
+  .nav-link:hover {
+    color: #f6ff00 !important;
+  }
