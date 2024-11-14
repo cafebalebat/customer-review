@@ -1,0 +1,9 @@
+*
+/* Body background and review container styling */
+body {
+    background-color: #121212;
+    color: #ddd;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
