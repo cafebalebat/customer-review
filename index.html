@@ -9,11 +9,29 @@
       rel="stylesheet"
     />
     <style>
-      
+      /* Navbar styling */
+      .navbar {
+        background-color: #1b1b1b;
+      }
+      .navbar-brand,
+      .nav-link {
+        color: #ffffff !important;
+        transition: color 0.3s;
+      }
+      .navbar-brand:hover,
+      .nav-link:hover {
+        color: #f6ff00 !important;
+      }
 
       
 
-      
+      .review-container {
+        min-height: calc(100vh - 140px); /* Adjust for navbar and footer */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+      }
 
       /* Review card styling */
       .review-card {
