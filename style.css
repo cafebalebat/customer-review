@@ -39,26 +39,22 @@ body {
 .review-card:hover {
   transform: translateY(-5px);
 }
-
 .review-text {
   font-size: 1.2rem;
   font-style: italic;
   color: #ffffff;
 }
-
 .reviewer-name {
   color: #f6ff00 !important;
   font-weight: bold;
   font-size: 1.1rem;
   margin-top: 15px;
 }
-
 .stars {
   font-size: 1.5rem;
   color: #ffc107;
   transition: transform 0.3s, color 0.3s;
 }
-
 .stars:hover {
   color: #ffdd57;
   transform: scale(1.1);
@@ -71,4 +67,3 @@ body {
   margin-bottom: 20px;
   object-fit: cover;
 }
-
