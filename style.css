@@ -23,3 +23,15 @@ body {
 .nav-link:hover {
   color: #f6ff00 !important;
 }
+
+/* Review card styling */
+.review-card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    max-width: 600px;
+    transition: transform 0.3s;
+  }
